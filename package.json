@@ -1,0 +1,23 @@
+{
+  "name": "easymock",
+  "version": "1.0.0",
+  "description": "An easy way to mock api using node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opedro/easymock.git"
+  },
+  "author": "Pedro Ruiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/opedro/easymock/issues"
+  },
+  "homepage": "https://github.com/opedro/easymock#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.3"
+  }
+}
