@@ -1,0 +1,6 @@
+{
+    "method": "get",
+    "success":"{'errorCode': '0', 'produtos': [{'nome': 'coca', 'preco': '10'}]}",
+    "fail": "{'errorCode': '1', 'errorMessage': 'exemplo'}",
+    "failChance": "10"
+}
