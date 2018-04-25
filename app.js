@@ -13,7 +13,7 @@ app.use(allowCrossDomain);
 
 const mocksDir = './mocks/';
 
-app.get('/generate', function (req, res) {
+app.get('/', function (req, res) {
     var mockBase = "app = require('express')();var allowCrossDomain = function(req, res, next) {\n\
         res.header('Access-Control-Allow-Origin', '*');\n\
         res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');\n\
@@ -49,7 +49,7 @@ app.get('/generate', function (req, res) {
                 fs.appendFile('./mockserver/mock.js', mockServer, function (err, content) {
                     console.log(i++, 'mocks loadeds of ', files.length );
                     if(i == files.length){
-                        require('./mockServer/mock.js');
+                        require('./mockserver/mock.js');
                         console.log('MOCKSERVER UP!');
                         res.json({'created':loadeds});
                     }
