@@ -39,7 +39,7 @@ app.get('/', function (req, res) {
                     if(Math.floor((Math.random() * 100) + 1) >"+configs.failChance+"){\n\
                         res.json("+ configs.success + ")\n\
                     }else{\n\
-                        res.json("+ configs.success + ")\n\
+                        res.json("+ configs.fail + ")\n\
                     }\n\
                 });"
                 
