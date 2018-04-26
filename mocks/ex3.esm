@@ -1,0 +1,9 @@
+{
+    "method": "post",
+    "parameters": [{"name": "login", "expect": "correto"},
+                    {"name": "password", "expect": "12345678"}
+                ],
+    "success":"{'errorCode': '0', 'perfil': [{'nome': 'Jonas', 'token': 'asd564a&5d56sa%dsa54$a5s64d'}]}",
+    "fail": "{'errorCode': '1', 'errorMessage': 'exemplo'}",
+    "failChance": "10"
+}
