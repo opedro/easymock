@@ -31,7 +31,7 @@ ex1.esm
     "failChance": "20"
 }
 ```
-This esm file will provide a server on locahost/ex1 with "{'errorCode': '0', 'amigos': [{'nome': 'Macito', 'idade': '22'}]}" as the response 80% of the time (based on the "failChance" parameter). 
+This esm file will provide a server on locahost/ex1 with "{'errorCode': '0', 'amigos': [{'nome': 'Pavanelli', 'idade': '23'}]}" as the response 80% of the time (based on the "failChance" parameter). 
 20% of times the response will be "{'errorCode': '1', 'errorMessage': 'exemplo'}", of course.
 
 ## Authors
