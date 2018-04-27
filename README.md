@@ -34,6 +34,22 @@ ex1.esm
 This esm file will provide a server on locahost/ex1 with "{'errorCode': '0', 'amigos': [{'nome': 'Macito', 'idade': '22'}]}" as the response 80% of the time (based on the "failChance" parameter). 
 20% of times the response will be "{'errorCode': '1', 'errorMessage': 'exemplo'}", of course.
 
+ex3.esm
+```
+{
+    "method": "post",
+    "parameters": [{"name": "login", "expect": "correto"},
+                    {"name": "password", "expect": "12345678"}
+                ],
+    "success":"{'errorCode': '0', 'perfil': [{'nome': 'Jonas', 'token': 'asd564a&5d56sa%dsa54$a5s64d'}]}",
+    "fail": "{'errorCode': '1', 'errorMessage': 'exemplo'}",
+    "failChance": "10"
+}
+```
+This esm file will provide a server on localhost/ex3 with "{'errorCode': '0', 'perfil': [{'nome': 'Jonas', 'token': 'asd564a&5d56sa%dsa54$a5s64d'}]}" as the response ONLY WHEN the body was "{"login": "correto", "password":"1234565645478"}".
+Any incorrect data will make the return to be "{'errorCode': '1', 'errorMessage': 'exemplo'}".
+obs: The correct body will still fail 10% of the times.
+
 ## Authors
 
 * **Pedro Ruiz** - *Initial work* - [opedro](https://github.com/opedro)
