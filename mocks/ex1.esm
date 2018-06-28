@@ -1,6 +1,6 @@
 {
     "method": "get",
-    "success":"{'errorCode': '0', 'amigos': [{'nome': 'Pavanelli', 'idade': '23'}]}",
+    "success":"{'errorCode': '0', 'amigos': [{'nome': 'Dias', 'idade': '23'}]}",
     "fail": "{'errorCode': '1', 'errorMessage': 'exemplo'}",
     "failChance": "20"
 }
