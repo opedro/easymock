@@ -56,4 +56,5 @@ obs: The correct body will still fail 10% of the times.
 
 ## I deserve a coffee
 
-https://www.mercadopago.com/mlb/checkout/start?pref_id=71353339-35512f96-87e7-4521-afb9-d43afae3ab77
+Donate R$ 3,00
+https://bit.ly/2u5e6Wn
