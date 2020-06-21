@@ -48,7 +48,6 @@ function generate() {
     });
 
     fs.readdir(mocksDir, (err, files) => {
-        var i = 1;
         var loadeds = "";
         files.forEach(file => {
             fs.readFile(mocksDir + '/' + file, 'utf8', function (err, content) {
